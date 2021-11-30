@@ -1,4 +1,6 @@
-import main.sort.BaseHelper;
+package util;
+
+import sort.BaseHelper;
 import org.ini4j.Ini;
 import org.ini4j.Profile;
 
