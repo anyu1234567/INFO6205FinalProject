@@ -9,7 +9,9 @@ import sort.SortWithHelper;
 import util.Config;
 
 import java.io.IOException;
+import java.text.Collator;
 import java.util.Arrays;
+import java.util.Locale;
 
 /**
  * Sorter which delegates to Timsort via Arrays.sort.
@@ -42,7 +44,7 @@ public class TimSort<X extends Comparable<X>> extends SortWithHelper<X> {
     }
 
     public void sort(X[] xs, int from, int to) {
-        Arrays.sort(xs, from, to);
+        Arrays.sort(xs, from, to, Collator.getInstance(Locale.CHINA));
     }
 
     public static final String DESCRIPTION = "Timsort";

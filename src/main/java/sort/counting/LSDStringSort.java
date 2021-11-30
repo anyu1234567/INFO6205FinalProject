@@ -1,5 +1,13 @@
 package sort.counting;
 
+import net.sourceforge.pinyin4j.PinyinHelper;
+
+
+
+import java.text.CollationKey;
+import java.text.Collator;
+import java.util.Locale;
+
 public class LSDStringSort {
 
     private final int ASCII_RANGE = 256;
@@ -12,8 +20,10 @@ public class LSDStringSort {
      */
     private int findMaxLength(String[] strArr) {
         int maxLength = strArr[0].length();
+        System.out.println(maxLength);
         for (String str : strArr)
             maxLength = Math.max(maxLength, str.length());
+        System.out.println(maxLength);
         return maxLength;
     }
 
@@ -29,7 +39,9 @@ public class LSDStringSort {
         if (charPosition >= str.length()) {
             return 0;
         }
-        return str.charAt(charPosition);
+        // transfer Chinese to pinyin.
+        String[] s = PinyinHelper.toHanyuPinyinStringArray(str.charAt(charPosition));
+        return s[0].charAt(1);
     }
 
     /**
