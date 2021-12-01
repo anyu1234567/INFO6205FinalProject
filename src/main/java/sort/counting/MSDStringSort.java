@@ -1,5 +1,6 @@
 package sort.counting;
 
+import net.sourceforge.pinyin4j.PinyinHelper;
 import sort.elementary.InsertionSortMSD;
 
 /**
@@ -41,12 +42,19 @@ public class MSDStringSort {
             if (hi - lo >= 0) System.arraycopy(aux, 0, a, lo, hi - lo);
             // Recursively sort for each character value.
             // TO BE IMPLEMENTED
+            for(int r =0;r<radix;r++){
+                sort(a,lo+count[r],lo+count[r+1]-1,d+1);
+            }
             //Collator c = Collator.getInstance(Locale.CHINA);
         }
     }
 
     private static int charAt(String s, int d) {
-        if (d < s.length()) return s.charAt(d);
+        if (d < s.length()){
+            String[] pinyinStringArray = PinyinHelper.toHanyuPinyinStringArray(s.charAt(d));
+            System.out.println(pinyinStringArray[0].charAt(0));
+            return pinyinStringArray[0].charAt(0);
+        }
         else return -1;
     }
 

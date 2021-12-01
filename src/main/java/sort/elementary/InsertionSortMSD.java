@@ -1,11 +1,14 @@
 package sort.elementary;
 
+import java.text.Collator;
+import java.util.Locale;
+
 /**
  * This is a basic implementation of insertion sort.
  * It does not extend Sort, nor does it employ any optimizations.
  */
 public class InsertionSortMSD {
-
+    public static Collator collator = Collator.getInstance(Locale.CHINA);
     public static void sort(String[] a, int lo, int hi, int d) {
         for (int i = lo; i < hi; i++)
             for (int j = i; j > lo && less(a[j], a[j - 1], d); j--)
@@ -13,7 +16,8 @@ public class InsertionSortMSD {
     }
 
     private static boolean less(String v, String w, int d) {
-        return v.substring(d).compareTo(w.substring(d)) < 0;
+
+        return collator.compare(v.substring(d),w.substring(d))< 0;
     }
 
     private static void swap(Object[] a, int j, int i) {

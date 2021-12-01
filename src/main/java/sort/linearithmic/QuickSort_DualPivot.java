@@ -3,8 +3,10 @@ package sort.linearithmic;
 import sort.Helper;
 import util.Config;
 
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class QuickSort_DualPivot<X extends Comparable<X>> extends QuickSort<X> {
 
@@ -56,7 +58,7 @@ public class QuickSort_DualPivot<X extends Comparable<X>> extends QuickSort<X> {
             final X[] xs = partition.xs;
             final int lo = partition.from;
             final int hi = partition.to - 1;
-            helper.swapConditional(xs, lo, hi);
+            helper. swapConditional(xs, lo, hi);
             int lt = lo + 1;
             int gt = hi - 1;
             int i = lt;
@@ -73,8 +75,9 @@ public class QuickSort_DualPivot<X extends Comparable<X>> extends QuickSort<X> {
             } else {
                 while (i <= gt) {
                     X x = xs[i];
-                    if (x.compareTo(xs[lo]) < 0) swap(xs, lt++, i++);
-                    else if (x.compareTo(xs[hi]) > 0) swap(xs, i, gt--);
+                    Collator collator = Collator.getInstance(Locale.CHINA);
+                    if (collator.compare(x,xs[lo]) < 0) swap(xs, lt++, i++);
+                    else if (collator.compare(x,xs[hi]) > 0) swap(xs, i, gt--);
                     else i++;
                 }
                 swap(xs, lo, --lt);

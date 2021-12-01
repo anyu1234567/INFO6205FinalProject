@@ -3,6 +3,7 @@ package sort.linearithmic;
 import sort.Helper;
 import sort.SortWithHelper;
 import sort.elementary.InsertionSort;
+import sort.elementary.InsertionSortMSD;
 import util.Config;
 import util.LazyLogger;
 
