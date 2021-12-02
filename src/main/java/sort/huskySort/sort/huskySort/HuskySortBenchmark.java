@@ -178,32 +178,32 @@ public final class HuskySortBenchmark {
         final boolean preSorted = isConfigBenchmarkStringSorter("presorted");
         final String s2 = ") words from " + corpus;
 
-        if (isConfigBenchmarkStringSorter("puresystemsort")) {
-            final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, "SystemSort", s2), null, Arrays::sort, null);
-            doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
-        }
+//        if (isConfigBenchmarkStringSorter("puresystemsort")) {
+//            final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, "SystemSort", s2), null, Arrays::sort, null);
+//            doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
+//        }
 
-        if (isConfigBenchmarkStringSorter("purehuskysort")) {
+//        if (isConfigBenchmarkStringSorter("purehuskysort")) {
             final boolean purehuskysortwithinsertionsort = isConfigBenchmarkStringSorter("purehuskysortwithinsertionsort");
             final PureHuskySort<String> pureHuskySort = new PureHuskySort<>(huskyCoder, preSorted, purehuskysortwithinsertionsort);
             final String s1 = "PureHuskySort" + (purehuskysortwithinsertionsort ? " with insertion sort" : "");
             final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, s1, s2), null, pureHuskySort::sort, null);
             doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
-        }
+//        }
 
-        if (isConfigBenchmarkStringSorter("mergehuskysort")) {
-            final MergeHuskySort<String> mergeHuskySort = new MergeHuskySort<>(huskyCoder);
-            final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, "MergeHuskySort", s2), null, mergeHuskySort::sort, null);
-            doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
-        }
-
-        if (isConfigBenchmarkStringSorter("puremergesort")) {
-            final PrivateMethodInvoker invoker = new PrivateMethodInvoker(Arrays.class);
-            final Class<?>[] classes = new Class[]{Object[].class};
-            final Consumer<String[]> sort = strings -> invoker.invokePrivateExplicit("legacyMergeSort", classes, new Object[]{strings});
-            final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, "Legacy MergeSort", s2), null, sort, null);
-            doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
-        }
+//        if (isConfigBenchmarkStringSorter("mergehuskysort")) {
+//            final MergeHuskySort<String> mergeHuskySort = new MergeHuskySort<>(huskyCoder);
+//            final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, "MergeHuskySort", s2), null, mergeHuskySort::sort, null);
+//            doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
+//        }
+//
+//        if (isConfigBenchmarkStringSorter("puremergesort")) {
+//            final PrivateMethodInvoker invoker = new PrivateMethodInvoker(Arrays.class);
+//            final Class<?>[] classes = new Class[]{Object[].class};
+//            final Consumer<String[]> sort = strings -> invoker.invokePrivateExplicit("legacyMergeSort", classes, new Object[]{strings});
+//            final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, "Legacy MergeSort", s2), null, sort, null);
+//            doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
+//        }
     }
 
     private static String getDescription(final int nWords, final String s1, final String s2) {
