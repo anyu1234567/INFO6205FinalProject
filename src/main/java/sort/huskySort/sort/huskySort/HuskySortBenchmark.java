@@ -27,6 +27,7 @@ import java.util.stream.Stream;
 
 import static sort.huskySort.sort.huskySort.AbstractHuskySort.UNICODE_CODER;
 import static sort.huskySort.sort.huskySortUtils.HuskyCoderFactory.englishCoder;
+import static sort.huskySort.sort.huskySortUtils.HuskyCoderFactory.utf8ChineseCoder;
 import static sort.huskySort.sort.huskySortUtils.HuskySortHelper.generateRandomLocalDateTimeArray;
 import static sort.huskySort.util.Utilities.*;
 
@@ -68,7 +69,8 @@ public final class HuskySortBenchmark {
         // NOTE: Leipzig Chinese words benchmarks (according to command-line arguments)
         if (isConfigBenchmarkStringSorter("leipzigchinese"))
             doLeipzigBenchmark("shuffledChinese.txt", n, m, UNICODE_CODER);
-
+        if (isConfigBenchmarkStringSorter("Chinese"))
+            benchmarkStringSorters(COMMON_CHINESE_WORDS_CORPUS, HuskySortBenchmarkHelper.getWords(COMMON_CHINESE_WORDS_CORPUS, HuskySortBenchmark::lineAsList), n, m, utf8ChineseCoder);
         // NOTE: common words benchmark
         if (isConfigBenchmarkStringSorter("english"))
             benchmarkStringSorters(COMMON_WORDS_CORPUS, HuskySortBenchmarkHelper.getWords(COMMON_WORDS_CORPUS, HuskySortBenchmark::lineAsList), n, m, englishCoder);
@@ -641,7 +643,7 @@ public final class HuskySortBenchmark {
     };
 
     static final String COMMON_WORDS_CORPUS = "3000-common-words.txt";
-
+    static final String COMMON_CHINESE_WORDS_CORPUS = "shuffledChinese.txt";
     static private void logBenchmarkRun(final double time) {
         logger.info(TimeLogger.formatTime(time) + " ms");
     }
