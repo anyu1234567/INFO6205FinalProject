@@ -7,8 +7,10 @@ import sort.huskySort.sort.huskySortUtils.HuskySortHelper;
 import sort.huskySort.sort.simple.InsertionSort;
 import sort.huskySort.util.LazyLogger;
 
+import java.text.Collator;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Locale;
 
 import static java.util.Arrays.binarySearch;
 
@@ -56,7 +58,7 @@ public class PureHuskySort<X extends Comparable<X>> {
         if (useInsertionSort)
             new InsertionSort<X>().mutatingSort(xs);
         else
-            Arrays.sort(xs);
+            Arrays.sort(xs, Collator.getInstance(Locale.CHINA));
     }
 
 

@@ -2,6 +2,7 @@ package sort;
 
 import util.Config;
 
+import java.nio.ByteBuffer;
 import java.text.CollationKey;
 import java.text.Collator;
 import java.util.Locale;
@@ -71,7 +72,11 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
 
     @Override
     public void postProcess(Comparable[] xs) {
-
+        for (int i=1;i<xs.length;i++){
+            if (collator.compare(xs[i],xs[i-1])<0){
+                new HelperException("Array is not sorted");
+            }
+        }
     }
 
     @Override
@@ -103,20 +108,45 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
         return result;
     }
 
+    public static class HelperException extends RuntimeException {
+
+        public HelperException(String message) {
+            super(message);
+        }
+
+        public HelperException(String message, Throwable cause) {
+            super(message, cause);
+        }
+
+        public HelperException(Throwable cause) {
+            super(cause);
+        }
+
+        public HelperException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+            super(message, cause, enableSuppression, writableStackTrace);
+        }
+    }
 
     public static void main(String[] args) {
         Collator collator = Collator.getInstance(Locale.CHINA);
-        CollationKey key = collator.getCollationKey("啊啊");
+        CollationKey key = collator.getCollationKey("啊");
 
         for (byte b : key.toByteArray()) {
             System.out.print(b);
         }
+        ByteBuffer buffer = ByteBuffer.wrap(key.toByteArray());
         System.out.println();
-        CollationKey key2 = collator.getCollationKey("啊不");
+        System.out.println(buffer.getLong());
+        CollationKey key2 = collator.getCollationKey("从角度看萨拉");
         for (byte b : key2.toByteArray()) {
             System.out.print(b);
         }
-
+        ByteBuffer buffer2 = ByteBuffer.wrap(key2.toByteArray());
+        System.out.println();
+        long buffer2Long = buffer2.getLong();
+        int length = String.valueOf(buffer2Long).length();
+        System.out.println(buffer2Long);
+        System.out.println(length);
     }
     public Collator collator = Collator.getInstance(Locale.CHINA);
 }

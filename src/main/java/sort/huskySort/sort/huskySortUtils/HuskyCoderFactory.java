@@ -5,11 +5,15 @@ package sort.huskySort.sort.huskySortUtils;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.nio.ByteBuffer;
 import java.nio.LongBuffer;
 import java.nio.charset.Charset;
+import java.text.CollationKey;
+import java.text.Collator;
 import java.time.ZoneOffset;
 import java.time.chrono.ChronoLocalDateTime;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Random;
 
 /**
@@ -38,6 +42,8 @@ public final class HuskyCoderFactory {
     private static final int BIT_WIDTH_UTF8 = 8;
     private static final int MAX_LENGTH_UTF8 = BITS_LONG / BIT_WIDTH_UTF8;
     private static final int MASK_UTF8 = MASK_BYTE;
+
+    private static  final Collator collator = Collator.getInstance(Locale.CHINA);
 
     /**
      * Method to create a generic HuskyCoder for a class which is HuskySortable.
@@ -136,6 +142,19 @@ public final class HuskyCoderFactory {
         }
     };
 
+    public final static HuskySequenceCoder<String> utf8ChineseCoder = new BaseHuskySequenceCoder<String>("UTF8", 18) {
+        /**
+         * Encode X to a long
+         * As much as possible if x >y , huskyCode(x)>huskyCode(y)
+         *
+         * @param str X value to encode
+         * @return a long which is, as closely as possible, monotonically increasing with the domain of X values.
+         */
+
+        public long huskyEncode(final String str) {
+            return chineseUTF8ToLong(str);
+        }
+    };
     /**
      * A Husky Coder for Dates.
      */
@@ -302,6 +321,11 @@ public final class HuskyCoderFactory {
         // NOTE: to be compatible with this current encoding, we would take only 7 bits from each byte, leaving the first bit unset,
         // and thus allowing 9 characters to be significant.
         return stringToLong(str, MAX_LENGTH_ASCII, BIT_WIDTH_ASCII, MASK_ASCII);
+    }
+    public static long chineseUTF8ToLong(final String str){
+        CollationKey key = collator.getCollationKey(str);
+        ByteBuffer buffer = ByteBuffer.wrap(key.toByteArray());
+        return buffer.getLong();
     }
 
     static long utf8ToLong(final String str) {
