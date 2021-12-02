@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 public class HuskySortBenchmarkTest {
     HuskySortBenchmark benchmark;
-    final static String[] args = new String[]{"1000"};
+    final static String[] args = new String[]{"10000"};
 
     @Before
     public void setUp() throws Exception {
@@ -31,10 +31,11 @@ public class HuskySortBenchmarkTest {
 
     @Test
     public void sortStrings() throws IOException {
-        benchmark.sortStrings(Arrays.stream(args).map(Integer::parseInt), 10000);
+        benchmark.sortStrings(Arrays.stream(args).map(Integer::parseInt), 100000);
     }
 
     @Test
     public void benchmarkStringSorters() {
+
     }
 }
