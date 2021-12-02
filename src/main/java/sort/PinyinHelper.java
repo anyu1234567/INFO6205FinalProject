@@ -84,6 +84,9 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
 
     }
 
+
+
+
     @Override
     public boolean swapConditional(Comparable[] xs, int i, int j) {
         Comparable x = xs[i];
@@ -148,5 +151,6 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
         System.out.println(buffer2Long);
         System.out.println(length);
     }
+
     public Collator collator = Collator.getInstance(Locale.CHINA);
 }

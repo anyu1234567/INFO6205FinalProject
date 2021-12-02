@@ -200,4 +200,6 @@ public interface Helper<X extends Comparable<X>> extends GenericHelper<X> {
     default int maxDepth() {
         return 0;
     }
+
+
 }
