@@ -63,17 +63,18 @@ public final class HuskySortBenchmark {
 
     private void doSortStrings(final int n, final int m) {
         // NOTE: Leipzig English words benchmarks (according to command-line arguments)
-        if (isConfigBenchmarkStringSorter("leipzigenglish"))
-            doLeipzigBenchmarkEnglish(n, m);
-
-        // NOTE: Leipzig Chinese words benchmarks (according to command-line arguments)
-        if (isConfigBenchmarkStringSorter("leipzigchinese"))
-            doLeipzigBenchmark("shuffledChinese.txt", n, m, UNICODE_CODER);
-        if (isConfigBenchmarkStringSorter("Chinese"))
-            benchmarkStringSorters(COMMON_CHINESE_WORDS_CORPUS, HuskySortBenchmarkHelper.getWords(COMMON_CHINESE_WORDS_CORPUS, HuskySortBenchmark::lineAsList), n, m, utf8ChineseCoder);
-        // NOTE: common words benchmark
-        if (isConfigBenchmarkStringSorter("english"))
-            benchmarkStringSorters(COMMON_WORDS_CORPUS, HuskySortBenchmarkHelper.getWords(COMMON_WORDS_CORPUS, HuskySortBenchmark::lineAsList), n, m, englishCoder);
+//        if (isConfigBenchmarkStringSorter("leipzigenglish"))
+//            doLeipzigBenchmarkEnglish(n, m);
+//
+//        // NOTE: Leipzig Chinese words benchmarks (according to command-line arguments)
+//        if (isConfigBenchmarkStringSorter("leipzigchinese"))
+//            doLeipzigBenchmark("shuffledChinese.txt", n, m, UNICODE_CODER);
+//        if (isConfigBenchmarkStringSorter("Chinese"))
+//
+//        // NOTE: common words benchmark
+//        if (isConfigBenchmarkStringSorter("english"))
+//            benchmarkStringSorters(COMMON_WORDS_CORPUS, HuskySortBenchmarkHelper.getWords(COMMON_WORDS_CORPUS, HuskySortBenchmark::lineAsList), n, m, englishCoder);
+        benchmarkStringSorters(COMMON_CHINESE_WORDS_CORPUS, HuskySortBenchmarkHelper.getWords(COMMON_CHINESE_WORDS_CORPUS, HuskySortBenchmark::lineAsList), n, m, utf8ChineseCoder);
     }
 
     /**
