@@ -20,10 +20,8 @@ public class LSDStringSort {
      */
     private int findMaxLength(String[] strArr) {
         int maxLength = strArr[0].length();
-        System.out.println(maxLength);
         for (String str : strArr)
             maxLength = Math.max(maxLength, str.length());
-        System.out.println(maxLength);
         return maxLength;
     }
 

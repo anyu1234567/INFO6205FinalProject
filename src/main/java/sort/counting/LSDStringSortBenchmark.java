@@ -1,8 +1,7 @@
-package sort.linearithmic;
+package sort.counting;
 
 import sort.Helper;
 import sort.PinyinHelper;
-
 import sort.huskySort.util.Benchmark;
 import sort.huskySort.util.LazyLogger;
 import sort.huskySort.util.TimeLogger;
@@ -20,8 +19,8 @@ import java.util.stream.Stream;
 
 import static sort.huskySort.util.Utilities.*;
 
-public class TimSortBenchmark {
-    final static LazyLogger logger = new LazyLogger(TimSortBenchmark.class);
+public class LSDStringSortBenchmark {
+    final static LazyLogger logger = new LazyLogger(LSDStringSortBenchmark.class);
     static final String COMMON_CHINESE_WORDS_CORPUS = "shuffledChinese.txt";
     private static final double LgE = lg(Math.E);
 
@@ -30,8 +29,9 @@ public class TimSortBenchmark {
         wordCounts.forEach(x -> doSortStrings(x, round(totalOps / minComparisons(x))));
     }
     private void doSortStrings(final int n, final int m) {
-        benchmarkStringSorters(COMMON_CHINESE_WORDS_CORPUS, TimSortBenchmark.getWords(COMMON_CHINESE_WORDS_CORPUS, TimSortBenchmark::lineAsList), n, m,new PinyinHelper());
+        benchmarkStringSorters(COMMON_CHINESE_WORDS_CORPUS, LSDStringSortBenchmark.getWords(COMMON_CHINESE_WORDS_CORPUS, LSDStringSortBenchmark::lineAsList), n, m,new PinyinHelper());
     }
+
     /**
      * Method to run pure (non-instrumented) string sorter benchmarks.
      * <p>
@@ -54,10 +54,10 @@ public class TimSortBenchmark {
 
 
         //final boolean purehuskysortwithinsertionsort = isConfigBenchmarkStringSorter("purehuskysortwithinsertionsort");
-        final boolean purTimsort = false;
-        final TimSort timSort = new TimSort(helper);
-        final String s1 = "TimSort" + (purTimsort ? " with insertion sort" : "");
-        final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, s1, s2), null, timSort::sort, null);
+        final boolean purLSDStringSort = false;
+        final LSDStringSort lsdStringSort = new LSDStringSort();
+        final String s1 = "LSDStringSort" + (purLSDStringSort ? " with insertion sort" : "");
+        final Benchmark<String[]> benchmark = new Benchmark<>(getDescription(nWords, s1, s2), null, lsdStringSort::sort, null);
         doPureBenchmark(words, nWords, nRuns, random, benchmark, preSorted);
 
 
@@ -67,7 +67,6 @@ public class TimSortBenchmark {
         logger.info("CSV, " + benchmark + ", " + nWords + ", " + time);
         for (final TimeLogger timeLogger : timeLoggersLinearithmic) timeLogger.log(time, nWords);
     }
-
     private static Supplier<String[]> getWordSupplier(final String[] words, final int nWords, final Random random, final boolean preSorted) {
         // NOTE that the preSorted branch does not seem to work correctly with Chinese text.
         if (preSorted) {
@@ -88,13 +87,6 @@ public class TimSortBenchmark {
     private static String getDescription(final int nWords, final String s1, final String s2) {
         return s1 + " (" + nWords + s2;
     }
-
-    /**
-     * This is based on log2(n!)
-     *
-     * @param n the number of elements.
-     * @return the minimum number of comparisons possible to sort n randomly ordered elements.
-     */
     static double minComparisons(final int n) {
         final double lgN = lg(n);
         return n * (lgN - LgE) + lgN / 2 + 1.33;
@@ -106,7 +98,7 @@ public class TimSortBenchmark {
     }
     static String[] getWords(final String resource, final Function<String, List<String>> stringListFunction) {
         try {
-            final File file = new File(getPathname(resource,TimSort.class));
+            final File file = new File(getPathname(resource, LSDStringSort.class));
             final String[] result = getWordArray(file, stringListFunction, 2);
             logger.info("getWords: testing with " + formatWhole(result.length) + " unique words: from " + file);
             return result;
