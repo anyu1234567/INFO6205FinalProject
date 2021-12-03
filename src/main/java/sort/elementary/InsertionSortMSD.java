@@ -9,9 +9,9 @@ import java.util.Locale;
  */
 public class InsertionSortMSD {
     public static Collator collator = Collator.getInstance(Locale.CHINA);
-    public static void sort(String[] a, int lo, int hi, int d) {
+    public static void sort(String[][] a, int lo, int hi, int d) {
         for (int i = lo; i < hi; i++)
-            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--)
+            for (int j = i; j > lo && less(a[j][0], a[j - 1][0], d); j--)
                 swap(a, j, j - 1);
     }
 
