@@ -52,7 +52,7 @@ public class MSDStringSort {
     private static int charAt(String s, int d) {
         if (d < s.length()){
             String[] pinyinStringArray = PinyinHelper.toHanyuPinyinStringArray(s.charAt(d));
-            System.out.println(pinyinStringArray[0].charAt(0));
+            //System.out.println(pinyinStringArray[0].charAt(0));
             return pinyinStringArray[0].charAt(0);
         }
         else return -1;
