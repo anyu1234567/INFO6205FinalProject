@@ -37,11 +37,11 @@ public class LSDStringSort {
      */
     private int charAsciiVal(String str, int charPosition,int charPinyinPosition) {
         if (charPosition >= str.length()) {
-            return 0;
+            return -1;
         }
         String[] pinyinStringArray = PinyinHelper.toHanyuPinyinStringArray(str.charAt(charPosition));
         if (charPinyinPosition>=pinyinStringArray[0].length()){
-            return 0;
+            return -1;
         }
 
         return pinyinStringArray[0].charAt(charPosition);
