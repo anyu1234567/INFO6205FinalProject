@@ -44,7 +44,7 @@ public class LSDStringSort {
             return -1;
         }
 
-        return pinyinStringArray[0].charAt(charPosition);
+        return pinyinStringArray[0].charAt(charPinyinPosition);
     }
 
     /**
