@@ -3,7 +3,8 @@ package sort.counting;
 import net.sourceforge.pinyin4j.PinyinHelper;
 
 
-
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
 import java.text.CollationKey;
 import java.text.Collator;
 import java.util.Locale;
@@ -11,6 +12,7 @@ import java.util.Locale;
 public class LSDStringSort {
 
     private final int ASCII_RANGE = 256;
+    private Collator collator = Collator.getInstance(Locale.CHINA);
 
     /**
      * findMaxLength method returns maximum length of all available strings in an array
@@ -33,13 +35,16 @@ public class LSDStringSort {
      *                     doesn't exist then ASCII value of null i.e. 0 is returned
      * @return int Returns ASCII value
      */
-    private int charAsciiVal(String str, int charPosition) {
+    private int charAsciiVal(String str, int charPosition,int charPinyinPosition) {
         if (charPosition >= str.length()) {
             return 0;
         }
-        // transfer Chinese to pinyin.
-        String[] s = PinyinHelper.toHanyuPinyinStringArray(str.charAt(charPosition));
-        return s[0].charAt(1);
+        String[] pinyinStringArray = PinyinHelper.toHanyuPinyinStringArray(str.charAt(charPosition));
+        if (charPinyinPosition>=pinyinStringArray[0].length()){
+            return 0;
+        }
+
+        return pinyinStringArray[0].charAt(charPosition);
     }
 
     /**
@@ -50,12 +55,12 @@ public class LSDStringSort {
      * @param from         This is the starting index from which sorting operation will begin
      * @param to           This is the ending index up until which sorting operation will be continued
      */
-    private void charSort(String[] strArr, int charPosition, int from, int to) {
+    private void charSort(String[] strArr, int charPosition, int from, int to,int charPinyinPosition) {
         int[] count = new int[ASCII_RANGE + 2];
         String[] result = new String[strArr.length];
 
         for (int i = from; i <= to; i++) {
-            int c = charAsciiVal(strArr[i], charPosition);
+            int c = charAsciiVal(strArr[i], charPosition,charPinyinPosition);
             count[c + 2]++;
         }
 
@@ -65,7 +70,7 @@ public class LSDStringSort {
 
         // distribute
         for (int i = from; i <= to; i++) {
-            int c = charAsciiVal(strArr[i], charPosition);
+            int c = charAsciiVal(strArr[i], charPosition,charPinyinPosition);
             result[count[c + 1]++] = strArr[i];
         }
 
@@ -82,8 +87,24 @@ public class LSDStringSort {
      */
     public void sort(String[] strArr, int from, int to) {
         int maxLength = findMaxLength(strArr);
-        for (int i = maxLength - 1; i >= 0; i--)
-            charSort(strArr, i, from, to);
+        for (int i = maxLength - 1; i >= 0; i--){
+            int maxPinyinLength = findMaxPinyinLength(strArr,i);
+            for (int j = maxPinyinLength-1;j>=0;j--)
+                charSort(strArr, i, from, to,j);
+        }
+
+    }
+
+    private int findMaxPinyinLength(String[] strArr, int charPosition) {
+        int maxPinyinLength = Integer.MIN_VALUE;
+        for (String str : strArr){
+            if(charPosition>=str.length()){
+                continue;
+            }
+            String[] pinyinStringArray = PinyinHelper.toHanyuPinyinStringArray(str.charAt(charPosition));
+            maxPinyinLength= Math.max(pinyinStringArray[0].length(),maxPinyinLength);
+        }
+        return maxPinyinLength;
     }
 
     /**

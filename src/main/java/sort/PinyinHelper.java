@@ -1,8 +1,11 @@
 package sort;
 
 import util.Config;
+import util.LazyLogger;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.text.CollationKey;
 import java.text.Collator;
 import java.util.Locale;
@@ -130,9 +133,9 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
         Collator collator = Collator.getInstance(Locale.CHINA);
-        CollationKey key = collator.getCollationKey("啊");
+        CollationKey key = collator.getCollationKey("昂");//xi
 
         for (byte b : key.toByteArray()) {
             System.out.print(b);
@@ -140,7 +143,7 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
         ByteBuffer buffer = ByteBuffer.wrap(key.toByteArray());
         System.out.println();
         System.out.println(buffer.getLong());
-        CollationKey key2 = collator.getCollationKey("从角度看萨拉");
+        CollationKey key2 = collator.getCollationKey("安");//xia
         for (byte b : key2.toByteArray()) {
             System.out.print(b);
         }
@@ -150,7 +153,58 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
         int length = String.valueOf(buffer2Long).length();
         System.out.println(buffer2Long);
         System.out.println(length);
+        String s = "爱";
+        byte[] sBytes = s.getBytes("GB18030");
+        System.out.print("Bytes:");
+        for (byte b : sBytes) {
+            System.out.print(b+" ");
+        }
+        int mask=0xff;
+        int temp=0;
+        int n=0;
+        for(int i=0;i<sBytes.length;i++){
+            n<<=8;
+            temp=sBytes[i]&mask;
+            n|=temp;
+        }
+        System.out.println("\nint:"+n);
+        String s1 = stringToBit('啊');
+        System.out.println(s1);
+        String s2 = stringToBit('爱');
+        System.out.println(s2);
+        System.out.println(s1.compareTo(s2));
+        //阿滨 阿彬
+        //阿冰 阿兵
+        //阿婵 阿朝
+        String[] pinyinStringArray = net.sourceforge.pinyin4j.PinyinHelper.toHanyuPinyinStringArray('滨');
+        System.out.println(pinyinStringArray[0]);
+        pinyinStringArray = net.sourceforge.pinyin4j.PinyinHelper.toHanyuPinyinStringArray('彬');
+        System.out.println(pinyinStringArray[0]);
+        System.out.println(collator.compare("滨","彬"));
+    }
+    public static String stringToBit(char s) {
+        String[] strarry = net.sourceforge.pinyin4j.PinyinHelper.toHanyuPinyinStringArray(s);
+
+        byte[] bytes = strarry[0].getBytes();
+        StringBuilder binary = new StringBuilder();
+        for (byte b : bytes) {
+            int val = b;
+            for (int i = 0; i < 8; i++) {
+                binary.append((val & 128) == 0 ? 0 : 1);
+                val <<= 1;
+            }
+        }
+        return binary.toString();
+    }
+    public static boolean isSorted(String[] xs){
+        for (int i=1;i<xs.length;i++) {
+            if (collator.compare(xs[i], xs[i-1]) < 0){
+                System.out.println(xs[i-1]+" "+xs[i]);
+
+            }
+        }
+        return true;
     }
 
-    public Collator collator = Collator.getInstance(Locale.CHINA);
+    public static Collator collator = Collator.getInstance(Locale.CHINA);
 }
