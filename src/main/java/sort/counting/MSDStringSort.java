@@ -74,6 +74,6 @@ public class MSDStringSort {
     }
 
     private static final int radix = 256;
-    private static final int cutoff = 10;
+    private static final int cutoff = 0;
     private static String[][] aux;       // auxiliary array for distribution
 }
