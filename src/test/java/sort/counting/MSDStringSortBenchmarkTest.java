@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class MSDStringSortBenchmarkTest {
     MSDStringSortBenchmark benchmark;
-    final static String[] args = new String[]{"999999"};
+    final static String[] args = new String[]{"999999","23251","46502","95237","190475","380951"};
     @Before
     public void setUp() throws Exception {
         final Config config = Config.load(LSDStringSortBenchmark.class);
