@@ -199,8 +199,27 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
     public static boolean isSorted(String[] xs){
         for (int i=1;i<xs.length;i++) {
             if (collator.compare(xs[i], xs[i-1]) < 0){
-                System.out.println(xs[i-1]+" "+xs[i]);
+                return false;
 
+            }
+        }
+        return true;
+    }
+    public static boolean isSorted(String[] xs,String type){
+        int n = xs.length;
+        String[][] arywithPinyin = new String[n][2];
+        for (int i =0 ;i<xs.length;i++){
+            StringBuilder sb = new StringBuilder();
+            for (char c:xs[i].toCharArray()){
+                String[] pinyin = net.sourceforge.pinyin4j.PinyinHelper.toHanyuPinyinStringArray(c);
+                sb.append(pinyin[0]);
+            }
+            arywithPinyin[i][0] = xs[i];
+            arywithPinyin[i][1] = sb.toString();
+        }
+        for (int i=1;i<arywithPinyin.length;i++){
+            if (arywithPinyin[i][1].compareTo(arywithPinyin[i-1][1])<0){
+                return false;
             }
         }
         return true;

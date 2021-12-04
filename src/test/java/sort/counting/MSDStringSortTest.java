@@ -4,10 +4,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import sort.GetUnsortedArray;
+import sort.PinyinHelper;
 
-import java.io.IOException;
+import static org.junit.Assert.*;
 
-public class LSDStringSortTest {
+public class MSDStringSortTest {
 
     @Before
     public void setUp() throws Exception {
@@ -18,13 +19,9 @@ public class LSDStringSortTest {
     }
 
     @Test
-    public void sort() throws IOException {
+    public void sort() {
         String[] strary = GetUnsortedArray.get();
-        LSDStringSort lsdStringSort = new LSDStringSort();
-        lsdStringSort.sort(strary);
-
+        MSDStringSort.sort(strary);
+        assertTrue(PinyinHelper.isSorted(strary,"MSD"));
     }
-
-
-
 }

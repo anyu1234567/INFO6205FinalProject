@@ -66,7 +66,7 @@ public class MSDStringSort {
 
     private static int charAt(String s, int charPosition) {
         if (charPosition < s.length()){
-            System.out.println(s+" :"+s.charAt(charPosition));
+
             return s.charAt(charPosition);
         }else{
             return -1;
