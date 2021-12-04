@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class QuickSort_DualPivotBenchmarkTest extends TestCase {
     QuickSort_DualPivotBenchmark benchmark;
-    final static String[] args = new String[]{"999999","23251","46502","95237","190475","380951"};
+    final static String[] args = new String[]{"23251","46502","95237","190475","380951","999999"};
     @Before
     public void setUp() throws Exception {
         final Config config = Config.load(QuickSort_DualPivotBenchmark.class);

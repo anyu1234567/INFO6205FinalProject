@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 
 public class LSDStringSortBenchmarkTest {
     LSDStringSortBenchmark benchmark;
-    // set different size include 10M, 250k,500k,1M,2M,4M
-    final static String[] args = new String[]{"999999","23251","46502","95237","190475","380951"};
+    // set different size include  250k,500k,1M,2M,4M,10M
+    final static String[] args = new String[]{"23251","46502","95237","190475","380951","999999"};
     @Before
     public void setUp() throws Exception {
         final Config config = Config.load(LSDStringSortBenchmark.class);
