@@ -135,7 +135,7 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
         Collator collator = Collator.getInstance(Locale.CHINA);
-        CollationKey key = collator.getCollationKey("昂");//xi
+        CollationKey key = collator.getCollationKey("陈旻玥");//xi
 
         for (byte b : key.toByteArray()) {
             System.out.print(b);
@@ -143,7 +143,7 @@ public class PinyinHelper<X extends  Comparable<X>> implements Helper {
         ByteBuffer buffer = ByteBuffer.wrap(key.toByteArray());
         System.out.println();
         System.out.println(buffer.getLong());
-        CollationKey key2 = collator.getCollationKey("安");//xia
+        CollationKey key2 = collator.getCollationKey("陈旻旻");//xia
         for (byte b : key2.toByteArray()) {
             System.out.print(b);
         }

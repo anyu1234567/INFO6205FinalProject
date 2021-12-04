@@ -62,7 +62,7 @@ public class PureHuskySort<X extends Comparable<X>> {
     }
 
 
-    public void transToPinyin(){}
+
 
     /**
      * Primary constructor.

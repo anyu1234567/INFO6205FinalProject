@@ -142,7 +142,7 @@ public final class HuskyCoderFactory {
         }
     };
 
-    public final static HuskySequenceCoder<String> utf8ChineseCoder = new BaseHuskySequenceCoder<String>("UTF8", 18) {
+    public final static HuskySequenceCoder<String> utf8ChineseCoder = new BaseHuskySequenceCoder<String>("UTF8", 0) {
         /**
          * Encode X to a long
          * As much as possible if x >y , huskyCode(x)>huskyCode(y)
