@@ -8,16 +8,16 @@ import java.util.Locale;
  * It does not extend Sort, nor does it employ any optimizations.
  */
 public class InsertionSortMSD {
-    public static Collator collator = Collator.getInstance(Locale.CHINA);
+
     public static void sort(String[][] a, int lo, int hi, int d) {
         for (int i = lo; i < hi; i++)
-            for (int j = i; j > lo && less(a[j][0], a[j - 1][0], d); j--)
+            for (int j = i; j > lo && less(a[j][1], a[j - 1][1], d); j--)
                 swap(a, j, j - 1);
     }
 
     private static boolean less(String v, String w, int d) {
 
-        return collator.compare(v.substring(d),w.substring(d))< 0;
+        return v.substring(d).compareTo(w.substring(d)) < 0;
     }
 
     private static void swap(Object[] a, int j, int i) {
