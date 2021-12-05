@@ -1,0 +1,433 @@
+2021-12-02 11:21:21 INFO  HuskySortBenchmark - sortStrings: beginning String sorts
+2021-12-02 11:21:22 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-02 11:21:22 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 0 runs of sorting 100,000,000 words using coder: UTF8
+2021-12-02 11:21:22 DEBUG Config - Config.get(benchmarkstringsorters, presorted) = false
+2021-12-02 11:21:22 DEBUG Config - Config.get(benchmarkstringsorters, purehuskysortwithinsertionsort) = false
+2021-12-02 11:21:22 INFO  Benchmark - Begin run: PureHuskySort (100000000) words from shuffledChinese.txt with 0 runs
+2021-12-02 11:24:53 WARN  Timer - repeat: zero runs
+2021-12-02 11:24:53 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (100000000) words from shuffledChinese.txt, 100000000, Infinity
+2021-12-02 11:24:53 INFO  TimeLogger - Raw time per run (mSec):  ∞
+2021-12-02 11:24:53 INFO  TimeLogger - Normalized time per run (n log n):  ∞
+2021-12-02 11:30:01 INFO  HuskySortBenchmark - sortStrings: beginning String sorts
+2021-12-02 11:30:02 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-02 11:30:02 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 5 runs of sorting 999,999 words using coder: UTF8
+2021-12-02 11:30:02 DEBUG Config - Config.get(benchmarkstringsorters, presorted) = false
+2021-12-02 11:30:02 DEBUG Config - Config.get(benchmarkstringsorters, purehuskysortwithinsertionsort) = false
+2021-12-02 11:30:02 INFO  Benchmark - Begin run: PureHuskySort (999999) words from shuffledChinese.txt with 5 runs
+2021-12-02 11:30:10 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (999999) words from shuffledChinese.txt, 999999, 1006.3795109999999
+2021-12-02 11:30:10 INFO  TimeLogger - Raw time per run (mSec):  1006.38
+2021-12-02 11:30:10 INFO  TimeLogger - Normalized time per run (n log n):  9.07
+2021-12-02 11:31:04 INFO  HuskySortBenchmark - sortStrings: beginning String sorts
+2021-12-02 11:31:05 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-02 11:31:05 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 54 runs of sorting 999,999 words using coder: UTF8
+2021-12-02 11:31:05 DEBUG Config - Config.get(benchmarkstringsorters, presorted) = false
+2021-12-02 11:31:05 DEBUG Config - Config.get(benchmarkstringsorters, purehuskysortwithinsertionsort) = false
+2021-12-02 11:31:05 INFO  Benchmark - Begin run: PureHuskySort (999999) words from shuffledChinese.txt with 54 runs
+2021-12-02 11:32:06 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (999999) words from shuffledChinese.txt, 999999, 999.3630138518519
+2021-12-02 11:32:06 INFO  TimeLogger - Raw time per run (mSec):  999.36
+2021-12-02 11:32:06 INFO  TimeLogger - Normalized time per run (n log n):  9.01
+2021-12-02 11:32:25 INFO  HuskySortBenchmark - sortStrings: beginning String sorts
+2021-12-02 11:32:25 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-02 11:32:25 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 5 runs of sorting 9,999,999 words using coder: UTF8
+2021-12-02 11:32:25 DEBUG Config - Config.get(benchmarkstringsorters, presorted) = false
+2021-12-02 11:32:25 DEBUG Config - Config.get(benchmarkstringsorters, purehuskysortwithinsertionsort) = false
+2021-12-02 11:32:25 INFO  Benchmark - Begin run: PureHuskySort (9999999) words from shuffledChinese.txt with 5 runs
+2021-12-02 11:33:38 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (9999999) words from shuffledChinese.txt, 9999999, 10024.7512548
+2021-12-02 11:33:38 INFO  TimeLogger - Raw time per run (mSec):  10024.75
+2021-12-02 11:33:38 INFO  TimeLogger - Normalized time per run (n log n):  7.66
+2021-12-03 17:13:56 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 17:13:56 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 17:13:56 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 17:13:56 INFO  Benchmark - Begin run: LSDStringSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 17:14:44 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (999999) words from shuffledChinese.txt, 999999, 9396.413028666668
+2021-12-03 17:14:44 INFO  TimeLogger - Raw time per run (mSec):  9396.41
+2021-12-03 17:14:44 INFO  TimeLogger - Normalized time per run (n log n):  84.70
+2021-12-03 17:18:25 INFO  HuskySortBenchmark - sortStrings: beginning String sorts
+2021-12-03 17:18:26 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 17:18:26 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 54 runs of sorting 999,999 words using coder: UTF8
+2021-12-03 17:18:26 DEBUG Config - Config.get(benchmarkstringsorters, presorted) = false
+2021-12-03 17:18:26 DEBUG Config - Config.get(benchmarkstringsorters, purehuskysortwithinsertionsort) = false
+2021-12-03 17:18:26 INFO  Benchmark - Begin run: PureHuskySort (999999) words from shuffledChinese.txt with 54 runs
+2021-12-03 17:19:26 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (999999) words from shuffledChinese.txt, 999999, 968.1211489444445
+2021-12-03 17:19:26 INFO  TimeLogger - Raw time per run (mSec):  968.12
+2021-12-03 17:19:26 INFO  TimeLogger - Normalized time per run (n log n):  8.73
+2021-12-03 17:29:44 INFO  QuickSort_DualPivotBenchmark - sortStrings: beginning String sorts
+2021-12-03 17:29:45 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 17:29:45 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 17:29:45 INFO  Benchmark - Begin run: QuickSort_DualPivot (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 17:31:10 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (999999) words from shuffledChinese.txt, 999999, 16690.221948333336
+2021-12-03 17:31:10 INFO  TimeLogger - Raw time per run (mSec):  16690.22
+2021-12-03 17:31:10 INFO  TimeLogger - Normalized time per run (n log n):  150.45
+2021-12-03 17:33:11 INFO  TimSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 17:33:12 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 17:33:12 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 17:33:12 INFO  Benchmark - Begin run: TimSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 17:34:03 INFO  TimSortBenchmark - CSV, Benchmark TimSort (999999) words from shuffledChinese.txt, 999999, 7984.837765
+2021-12-03 17:34:03 INFO  TimeLogger - Raw time per run (mSec):  7984.84
+2021-12-03 17:34:03 INFO  TimeLogger - Normalized time per run (n log n):  71.98
+2021-12-03 23:04:27 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:04:28 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:04:28 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 23:04:28 INFO  Benchmark - Begin run: LSDStringSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 23:05:18 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (999999) words from shuffledChinese.txt, 999999, 10141.847466666666
+2021-12-03 23:05:18 INFO  TimeLogger - Raw time per run (mSec):  10141.85
+2021-12-03 23:05:18 INFO  TimeLogger - Normalized time per run (n log n):  91.42
+2021-12-03 23:05:19 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:05:19 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-03 23:05:19 INFO  Benchmark - Begin run: LSDStringSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-03 23:06:04 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (23251) words from shuffledChinese.txt, 23251, 213.0608053181818
+2021-12-03 23:06:04 INFO  TimeLogger - Raw time per run (mSec):  213.06
+2021-12-03 23:06:04 INFO  TimeLogger - Normalized time per run (n log n):  116.92
+2021-12-03 23:06:04 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:06:04 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-03 23:06:04 INFO  Benchmark - Begin run: LSDStringSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-03 23:06:53 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (46502) words from shuffledChinese.txt, 46502, 480.5262246630435
+2021-12-03 23:06:53 INFO  TimeLogger - Raw time per run (mSec):  480.53
+2021-12-03 23:06:53 INFO  TimeLogger - Normalized time per run (n log n):  122.47
+2021-12-03 23:06:53 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:06:53 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-03 23:06:53 INFO  Benchmark - Begin run: LSDStringSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-03 23:07:42 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (95237) words from shuffledChinese.txt, 95237, 1053.9129575
+2021-12-03 23:07:42 INFO  TimeLogger - Raw time per run (mSec):  1053.91
+2021-12-03 23:07:42 INFO  TimeLogger - Normalized time per run (n log n):  122.17
+2021-12-03 23:07:42 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:07:42 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-03 23:07:42 INFO  Benchmark - Begin run: LSDStringSort (190475) words from shuffledChinese.txt with 20 runs
+2021-12-03 23:08:31 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (190475) words from shuffledChinese.txt, 190475, 2188.7462553
+2021-12-03 23:08:31 INFO  TimeLogger - Raw time per run (mSec):  2188.75
+2021-12-03 23:08:31 INFO  TimeLogger - Normalized time per run (n log n):  118.98
+2021-12-03 23:08:31 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:08:31 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-03 23:08:31 INFO  Benchmark - Begin run: LSDStringSort (380951) words from shuffledChinese.txt with 9 runs
+2021-12-03 23:09:16 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (380951) words from shuffledChinese.txt, 380951, 4025.9412452222223
+2021-12-03 23:09:16 INFO  TimeLogger - Raw time per run (mSec):  4025.94
+2021-12-03 23:09:16 INFO  TimeLogger - Normalized time per run (n log n):  103.02
+2021-12-03 23:51:29 INFO  QuickSort_DualPivotBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:51:30 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:51:30 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 23:51:30 INFO  Benchmark - Begin run: QuickSort_DualPivot (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 23:51:50 INFO  QuickSort_DualPivotBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:51:51 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:51:51 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 23:51:51 INFO  Benchmark - Begin run: QuickSort_DualPivot (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 23:52:24 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:52:25 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:52:25 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-03 23:52:25 INFO  Benchmark - Begin run: LSDStringSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-03 23:52:59 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (999999) words from shuffledChinese.txt, 999999, 17908.19031933333
+2021-12-03 23:52:59 INFO  TimeLogger - Raw time per run (mSec):  17908.19
+2021-12-03 23:52:59 INFO  TimeLogger - Normalized time per run (n log n):  161.43
+2021-12-03 23:53:00 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:53:00 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-03 23:53:00 INFO  Benchmark - Begin run: QuickSort_DualPivot (23251) words from shuffledChinese.txt with 198 runs
+2021-12-03 23:53:10 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (999999) words from shuffledChinese.txt, 999999, 9006.033435
+2021-12-03 23:53:10 INFO  TimeLogger - Raw time per run (mSec):  9006.03
+2021-12-03 23:53:10 INFO  TimeLogger - Normalized time per run (n log n):  81.18
+2021-12-03 23:53:37 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (23251) words from shuffledChinese.txt, 23251, 171.3772263939394
+2021-12-03 23:53:37 INFO  TimeLogger - Raw time per run (mSec):  171.38
+2021-12-03 23:53:37 INFO  TimeLogger - Normalized time per run (n log n):  94.04
+2021-12-03 23:53:37 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:53:37 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-03 23:53:37 INFO  Benchmark - Begin run: QuickSort_DualPivot (46502) words from shuffledChinese.txt with 92 runs
+2021-12-03 23:53:48 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:53:48 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:53:49 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-03 23:53:49 INFO  Benchmark - Begin run: LSDStringSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-03 23:54:18 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (46502) words from shuffledChinese.txt, 46502, 398.37579703260866
+2021-12-03 23:54:18 INFO  TimeLogger - Raw time per run (mSec):  398.38
+2021-12-03 23:54:18 INFO  TimeLogger - Normalized time per run (n log n):  101.53
+2021-12-03 23:54:18 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:54:18 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-03 23:54:18 INFO  Benchmark - Begin run: QuickSort_DualPivot (95237) words from shuffledChinese.txt with 42 runs
+2021-12-03 23:54:33 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (23251) words from shuffledChinese.txt, 23251, 207.34176463636362
+2021-12-03 23:54:33 INFO  TimeLogger - Raw time per run (mSec):  207.34
+2021-12-03 23:54:33 INFO  TimeLogger - Normalized time per run (n log n):  113.78
+2021-12-03 23:54:58 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (95237) words from shuffledChinese.txt, 95237, 848.5645539285714
+2021-12-03 23:54:58 INFO  TimeLogger - Raw time per run (mSec):  848.56
+2021-12-03 23:54:58 INFO  TimeLogger - Normalized time per run (n log n):  98.37
+2021-12-03 23:54:58 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:54:58 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-03 23:54:58 INFO  Benchmark - Begin run: QuickSort_DualPivot (190475) words from shuffledChinese.txt with 20 runs
+2021-12-03 23:55:01 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:55:02 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:55:02 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-03 23:55:02 INFO  Benchmark - Begin run: LSDStringSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-03 23:55:39 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (190475) words from shuffledChinese.txt, 190475, 1809.2409543
+2021-12-03 23:55:39 INFO  TimeLogger - Raw time per run (mSec):  1809.24
+2021-12-03 23:55:39 INFO  TimeLogger - Normalized time per run (n log n):  98.35
+2021-12-03 23:55:39 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:55:39 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-03 23:55:39 INFO  Benchmark - Begin run: QuickSort_DualPivot (380951) words from shuffledChinese.txt with 9 runs
+2021-12-03 23:55:45 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (46502) words from shuffledChinese.txt, 46502, 416.38880143478264
+2021-12-03 23:55:45 INFO  TimeLogger - Raw time per run (mSec):  416.39
+2021-12-03 23:55:45 INFO  TimeLogger - Normalized time per run (n log n):  106.12
+2021-12-03 23:56:19 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:56:20 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:56:20 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-03 23:56:20 INFO  Benchmark - Begin run: LSDStringSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-03 23:56:27 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (380951) words from shuffledChinese.txt, 380951, 4377.699839555556
+2021-12-03 23:56:27 INFO  TimeLogger - Raw time per run (mSec):  4377.70
+2021-12-03 23:56:27 INFO  TimeLogger - Normalized time per run (n log n):  112.03
+2021-12-03 23:57:07 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (95237) words from shuffledChinese.txt, 95237, 983.7779191666666
+2021-12-03 23:57:07 INFO  TimeLogger - Raw time per run (mSec):  983.78
+2021-12-03 23:57:07 INFO  TimeLogger - Normalized time per run (n log n):  114.04
+2021-12-03 23:57:33 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:57:33 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:57:33 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-03 23:57:33 INFO  Benchmark - Begin run: LSDStringSort (190475) words from shuffledChinese.txt with 20 runs
+2021-12-03 23:58:18 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (190475) words from shuffledChinese.txt, 190475, 1969.9116703
+2021-12-03 23:58:18 INFO  TimeLogger - Raw time per run (mSec):  1969.91
+2021-12-03 23:58:18 INFO  TimeLogger - Normalized time per run (n log n):  107.08
+2021-12-03 23:58:40 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-03 23:58:41 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-03 23:58:41 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-03 23:58:41 INFO  Benchmark - Begin run: LSDStringSort (380951) words from shuffledChinese.txt with 9 runs
+2021-12-03 23:59:26 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (380951) words from shuffledChinese.txt, 380951, 4049.529368111111
+2021-12-03 23:59:26 INFO  TimeLogger - Raw time per run (mSec):  4049.53
+2021-12-03 23:59:26 INFO  TimeLogger - Normalized time per run (n log n):  103.63
+2021-12-04 00:19:15 INFO  LSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-04 00:19:16 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:19:16 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-04 00:19:16 INFO  Benchmark - Begin run: LSDStringSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-04 00:19:58 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (23251) words from shuffledChinese.txt, 23251, 192.9157749141414
+2021-12-04 00:19:58 INFO  TimeLogger - Raw time per run (mSec):  192.92
+2021-12-04 00:19:58 INFO  TimeLogger - Normalized time per run (n log n):  105.86
+2021-12-04 00:19:58 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:19:58 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-04 00:19:58 INFO  Benchmark - Begin run: LSDStringSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-04 00:20:48 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (46502) words from shuffledChinese.txt, 46502, 491.59436030434784
+2021-12-04 00:20:48 INFO  TimeLogger - Raw time per run (mSec):  491.59
+2021-12-04 00:20:48 INFO  TimeLogger - Normalized time per run (n log n):  125.29
+2021-12-04 00:20:49 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:20:49 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-04 00:20:49 INFO  Benchmark - Begin run: LSDStringSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-04 00:21:38 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (95237) words from shuffledChinese.txt, 95237, 1072.0440520238096
+2021-12-04 00:21:38 INFO  TimeLogger - Raw time per run (mSec):  1072.04
+2021-12-04 00:21:38 INFO  TimeLogger - Normalized time per run (n log n):  124.27
+2021-12-04 00:21:38 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:21:38 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-04 00:21:38 INFO  Benchmark - Begin run: LSDStringSort (190475) words from shuffledChinese.txt with 20 runs
+2021-12-04 00:22:23 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (190475) words from shuffledChinese.txt, 190475, 2034.3826633
+2021-12-04 00:22:23 INFO  TimeLogger - Raw time per run (mSec):  2034.38
+2021-12-04 00:22:23 INFO  TimeLogger - Normalized time per run (n log n):  110.59
+2021-12-04 00:22:24 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:22:24 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-04 00:22:24 INFO  Benchmark - Begin run: LSDStringSort (380951) words from shuffledChinese.txt with 9 runs
+2021-12-04 00:23:08 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (380951) words from shuffledChinese.txt, 380951, 4035.5980324444445
+2021-12-04 00:23:08 INFO  TimeLogger - Raw time per run (mSec):  4035.60
+2021-12-04 00:23:08 INFO  TimeLogger - Normalized time per run (n log n):  103.27
+2021-12-04 00:23:08 INFO  LSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:23:08 INFO  LSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-04 00:23:08 INFO  Benchmark - Begin run: LSDStringSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-04 00:23:59 INFO  LSDStringSortBenchmark - CSV, Benchmark LSDStringSort (999999) words from shuffledChinese.txt, 999999, 9660.931884
+2021-12-04 00:23:59 INFO  TimeLogger - Raw time per run (mSec):  9660.93
+2021-12-04 00:23:59 INFO  TimeLogger - Normalized time per run (n log n):  87.09
+2021-12-04 00:29:58 INFO  QuickSort_DualPivotBenchmark - sortStrings: beginning String sorts
+2021-12-04 00:29:59 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:29:59 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-04 00:29:59 INFO  Benchmark - Begin run: QuickSort_DualPivot (23251) words from shuffledChinese.txt with 198 runs
+2021-12-04 00:30:52 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (23251) words from shuffledChinese.txt, 23251, 253.1196143888889
+2021-12-04 00:30:52 INFO  TimeLogger - Raw time per run (mSec):  253.12
+2021-12-04 00:30:52 INFO  TimeLogger - Normalized time per run (n log n):  138.90
+2021-12-04 00:30:53 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:30:53 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-04 00:30:53 INFO  Benchmark - Begin run: QuickSort_DualPivot (46502) words from shuffledChinese.txt with 92 runs
+2021-12-04 00:31:31 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (46502) words from shuffledChinese.txt, 46502, 367.01938511956524
+2021-12-04 00:31:31 INFO  TimeLogger - Raw time per run (mSec):  367.02
+2021-12-04 00:31:31 INFO  TimeLogger - Normalized time per run (n log n):  93.54
+2021-12-04 00:31:31 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:31:31 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-04 00:31:31 INFO  Benchmark - Begin run: QuickSort_DualPivot (95237) words from shuffledChinese.txt with 42 runs
+2021-12-04 00:32:09 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (95237) words from shuffledChinese.txt, 95237, 817.3179887142857
+2021-12-04 00:32:09 INFO  TimeLogger - Raw time per run (mSec):  817.32
+2021-12-04 00:32:09 INFO  TimeLogger - Normalized time per run (n log n):  94.74
+2021-12-04 00:32:10 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:32:10 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-04 00:32:10 INFO  Benchmark - Begin run: QuickSort_DualPivot (190475) words from shuffledChinese.txt with 20 runs
+2021-12-04 00:32:55 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (190475) words from shuffledChinese.txt, 190475, 2075.17728445
+2021-12-04 00:32:55 INFO  TimeLogger - Raw time per run (mSec):  2075.18
+2021-12-04 00:32:55 INFO  TimeLogger - Normalized time per run (n log n):  112.81
+2021-12-04 00:32:56 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:32:56 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-04 00:32:56 INFO  Benchmark - Begin run: QuickSort_DualPivot (380951) words from shuffledChinese.txt with 9 runs
+2021-12-04 00:33:40 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (380951) words from shuffledChinese.txt, 380951, 3957.8511103333335
+2021-12-04 00:33:40 INFO  TimeLogger - Raw time per run (mSec):  3957.85
+2021-12-04 00:33:40 INFO  TimeLogger - Normalized time per run (n log n):  101.28
+2021-12-04 00:33:40 INFO  QuickSort_DualPivotBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:33:40 INFO  QuickSort_DualPivotBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-04 00:33:40 INFO  Benchmark - Begin run: QuickSort_DualPivot (999999) words from shuffledChinese.txt with 3 runs
+2021-12-04 00:34:38 INFO  QuickSort_DualPivotBenchmark - CSV, Benchmark QuickSort_DualPivot (999999) words from shuffledChinese.txt, 999999, 11299.431627666667
+2021-12-04 00:34:38 INFO  TimeLogger - Raw time per run (mSec):  11299.43
+2021-12-04 00:34:38 INFO  TimeLogger - Normalized time per run (n log n):  101.86
+2021-12-04 00:45:35 INFO  TimSortBenchmark - sortStrings: beginning String sorts
+2021-12-04 00:45:36 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:45:36 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-04 00:45:36 INFO  Benchmark - Begin run: TimSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-04 00:46:01 INFO  TimSortBenchmark - CSV, Benchmark TimSort (23251) words from shuffledChinese.txt, 23251, 114.2153476060606
+2021-12-04 00:46:01 INFO  TimeLogger - Raw time per run (mSec):  114.22
+2021-12-04 00:46:01 INFO  TimeLogger - Normalized time per run (n log n):  62.68
+2021-12-04 00:46:01 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:46:01 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-04 00:46:01 INFO  Benchmark - Begin run: TimSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-04 00:46:29 INFO  TimSortBenchmark - CSV, Benchmark TimSort (46502) words from shuffledChinese.txt, 46502, 265.6330549021739
+2021-12-04 00:46:29 INFO  TimeLogger - Raw time per run (mSec):  265.63
+2021-12-04 00:46:29 INFO  TimeLogger - Normalized time per run (n log n):  67.70
+2021-12-04 00:46:29 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:46:29 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-04 00:46:29 INFO  Benchmark - Begin run: TimSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-04 00:46:55 INFO  TimSortBenchmark - CSV, Benchmark TimSort (95237) words from shuffledChinese.txt, 95237, 563.2146237380953
+2021-12-04 00:46:55 INFO  TimeLogger - Raw time per run (mSec):  563.21
+2021-12-04 00:46:55 INFO  TimeLogger - Normalized time per run (n log n):  65.29
+2021-12-04 00:46:56 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:46:56 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-04 00:46:56 INFO  Benchmark - Begin run: TimSort (190475) words from shuffledChinese.txt with 20 runs
+2021-12-04 00:47:24 INFO  TimSortBenchmark - CSV, Benchmark TimSort (190475) words from shuffledChinese.txt, 190475, 1253.7336846
+2021-12-04 00:47:24 INFO  TimeLogger - Raw time per run (mSec):  1253.73
+2021-12-04 00:47:24 INFO  TimeLogger - Normalized time per run (n log n):  68.15
+2021-12-04 00:47:24 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:47:24 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-04 00:47:24 INFO  Benchmark - Begin run: TimSort (380951) words from shuffledChinese.txt with 9 runs
+2021-12-04 00:47:55 INFO  TimSortBenchmark - CSV, Benchmark TimSort (380951) words from shuffledChinese.txt, 380951, 2788.9339907777776
+2021-12-04 00:47:55 INFO  TimeLogger - Raw time per run (mSec):  2788.93
+2021-12-04 00:47:55 INFO  TimeLogger - Normalized time per run (n log n):  71.37
+2021-12-04 00:47:55 INFO  TimSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:47:55 INFO  TimSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-04 00:47:55 INFO  Benchmark - Begin run: TimSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-04 00:48:40 INFO  TimSortBenchmark - CSV, Benchmark TimSort (999999) words from shuffledChinese.txt, 999999, 9175.252096
+2021-12-04 00:48:40 INFO  TimeLogger - Raw time per run (mSec):  9175.25
+2021-12-04 00:48:40 INFO  TimeLogger - Normalized time per run (n log n):  82.71
+2021-12-04 00:52:48 INFO  MSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-04 00:52:49 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:52:49 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-04 00:52:49 INFO  Benchmark - Begin run: MSDStringSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-04 00:52:58 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (23251) words from shuffledChinese.txt, 23251, 39.85686449494949
+2021-12-04 00:52:58 INFO  TimeLogger - Raw time per run (mSec):  39.86
+2021-12-04 00:52:58 INFO  TimeLogger - Normalized time per run (n log n):  21.87
+2021-12-04 00:52:58 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:52:58 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-04 00:52:58 INFO  Benchmark - Begin run: MSDStringSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-04 00:53:08 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (46502) words from shuffledChinese.txt, 46502, 87.33522608695652
+2021-12-04 00:53:08 INFO  TimeLogger - Raw time per run (mSec):  87.34
+2021-12-04 00:53:08 INFO  TimeLogger - Normalized time per run (n log n):  22.26
+2021-12-04 00:53:08 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:53:08 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-04 00:53:08 INFO  Benchmark - Begin run: MSDStringSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-04 00:53:17 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (95237) words from shuffledChinese.txt, 95237, 195.7089412857143
+2021-12-04 00:53:17 INFO  TimeLogger - Raw time per run (mSec):  195.71
+2021-12-04 00:53:17 INFO  TimeLogger - Normalized time per run (n log n):  22.69
+2021-12-04 00:53:18 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:53:18 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-04 00:53:18 INFO  Benchmark - Begin run: MSDStringSort (190475) words from shuffledChinese.txt with 20 runs
+2021-12-04 00:53:29 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (190475) words from shuffledChinese.txt, 190475, 520.3959799500001
+2021-12-04 00:53:29 INFO  TimeLogger - Raw time per run (mSec):  520.40
+2021-12-04 00:53:29 INFO  TimeLogger - Normalized time per run (n log n):  28.29
+2021-12-04 00:53:30 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:53:30 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-04 00:53:30 INFO  Benchmark - Begin run: MSDStringSort (380951) words from shuffledChinese.txt with 9 runs
+2021-12-04 00:53:41 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (380951) words from shuffledChinese.txt, 380951, 992.9194693333334
+2021-12-04 00:53:41 INFO  TimeLogger - Raw time per run (mSec):  992.92
+2021-12-04 00:53:41 INFO  TimeLogger - Normalized time per run (n log n):  25.41
+2021-12-04 00:53:42 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 00:53:42 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-04 00:53:42 INFO  Benchmark - Begin run: MSDStringSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-04 00:53:55 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (999999) words from shuffledChinese.txt, 999999, 2536.554254
+2021-12-04 00:53:55 INFO  TimeLogger - Raw time per run (mSec):  2536.55
+2021-12-04 00:53:55 INFO  TimeLogger - Normalized time per run (n log n):  22.87
+2021-12-04 01:00:18 INFO  HuskySortBenchmark - sortStrings: beginning String sorts
+2021-12-04 01:00:18 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 01:00:18 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 3,293 runs of sorting 23,251 words using coder: UTF8
+2021-12-04 01:00:18 DEBUG Config - Config.get(benchmarkstringsorters, presorted) = false
+2021-12-04 01:00:18 DEBUG Config - Config.get(benchmarkstringsorters, purehuskysortwithinsertionsort) = false
+2021-12-04 01:00:18 INFO  Benchmark - Begin run: PureHuskySort (23251) words from shuffledChinese.txt with 3,293 runs
+2021-12-04 01:02:06 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (23251) words from shuffledChinese.txt, 23251, 31.25833157333738
+2021-12-04 01:02:06 INFO  TimeLogger - Raw time per run (mSec):  31.26
+2021-12-04 01:02:06 INFO  TimeLogger - Normalized time per run (n log n):  17.15
+2021-12-04 01:02:07 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 01:02:07 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 1,529 runs of sorting 46,502 words using coder: UTF8
+2021-12-04 01:02:07 INFO  Benchmark - Begin run: PureHuskySort (46502) words from shuffledChinese.txt with 1,529 runs
+2021-12-04 01:03:53 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (46502) words from shuffledChinese.txt, 46502, 66.95483075539568
+2021-12-04 01:03:53 INFO  TimeLogger - Raw time per run (mSec):  66.95
+2021-12-04 01:03:53 INFO  TimeLogger - Normalized time per run (n log n):  17.06
+2021-12-04 01:03:54 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 01:03:54 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 696 runs of sorting 95,237 words using coder: UTF8
+2021-12-04 01:03:54 INFO  Benchmark - Begin run: PureHuskySort (95237) words from shuffledChinese.txt with 696 runs
+2021-12-04 01:05:37 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (95237) words from shuffledChinese.txt, 95237, 142.74261702729885
+2021-12-04 01:05:37 INFO  TimeLogger - Raw time per run (mSec):  142.74
+2021-12-04 01:05:37 INFO  TimeLogger - Normalized time per run (n log n):  16.55
+2021-12-04 01:05:38 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 01:05:38 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 326 runs of sorting 190,475 words using coder: UTF8
+2021-12-04 01:05:38 INFO  Benchmark - Begin run: PureHuskySort (190475) words from shuffledChinese.txt with 326 runs
+2021-12-04 01:07:23 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (190475) words from shuffledChinese.txt, 190475, 304.61774710429444
+2021-12-04 01:07:23 INFO  TimeLogger - Raw time per run (mSec):  304.62
+2021-12-04 01:07:23 INFO  TimeLogger - Normalized time per run (n log n):  16.56
+2021-12-04 01:07:23 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 01:07:23 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 154 runs of sorting 380,951 words using coder: UTF8
+2021-12-04 01:07:23 INFO  Benchmark - Begin run: PureHuskySort (380951) words from shuffledChinese.txt with 154 runs
+2021-12-04 01:09:10 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (380951) words from shuffledChinese.txt, 380951, 638.8928953246754
+2021-12-04 01:09:10 INFO  TimeLogger - Raw time per run (mSec):  638.89
+2021-12-04 01:09:10 INFO  TimeLogger - Normalized time per run (n log n):  16.35
+2021-12-04 01:09:11 INFO  HuskySortBenchmarkHelper - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 01:09:11 INFO  HuskySortBenchmark - benchmarkStringSorters: testing pure sorts with 54 runs of sorting 999,999 words using coder: UTF8
+2021-12-04 01:09:11 INFO  Benchmark - Begin run: PureHuskySort (999999) words from shuffledChinese.txt with 54 runs
+2021-12-04 01:10:47 INFO  HuskySortBenchmark - CSV, Benchmark PureHuskySort (999999) words from shuffledChinese.txt, 999999, 1601.9743838518518
+2021-12-04 01:10:47 INFO  TimeLogger - Raw time per run (mSec):  1601.97
+2021-12-04 01:10:47 INFO  TimeLogger - Normalized time per run (n log n):  14.44
+2021-12-04 12:18:14 INFO  MSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-04 12:18:14 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:18:14 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-04 12:18:15 INFO  Benchmark - Begin run: MSDStringSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-04 12:18:24 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (23251) words from shuffledChinese.txt, 23251, 40.53658597979798
+2021-12-04 12:18:24 INFO  TimeLogger - Raw time per run (mSec):  40.54
+2021-12-04 12:18:24 INFO  TimeLogger - Normalized time per run (n log n):  22.24
+2021-12-04 12:18:24 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:18:24 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-04 12:18:24 INFO  Benchmark - Begin run: MSDStringSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-04 12:18:34 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (46502) words from shuffledChinese.txt, 46502, 89.77922440217391
+2021-12-04 12:18:34 INFO  TimeLogger - Raw time per run (mSec):  89.78
+2021-12-04 12:18:34 INFO  TimeLogger - Normalized time per run (n log n):  22.88
+2021-12-04 12:18:34 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:18:34 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-04 12:18:34 INFO  Benchmark - Begin run: MSDStringSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-04 12:18:45 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (95237) words from shuffledChinese.txt, 95237, 223.39408269047618
+2021-12-04 12:18:45 INFO  TimeLogger - Raw time per run (mSec):  223.39
+2021-12-04 12:18:45 INFO  TimeLogger - Normalized time per run (n log n):  25.90
+2021-12-04 12:18:45 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:18:45 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-04 12:18:45 INFO  Benchmark - Begin run: MSDStringSort (190475) words from shuffledChinese.txt with 20 runs
+2021-12-04 12:18:56 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (190475) words from shuffledChinese.txt, 190475, 484.20574535
+2021-12-04 12:18:56 INFO  TimeLogger - Raw time per run (mSec):  484.21
+2021-12-04 12:18:56 INFO  TimeLogger - Normalized time per run (n log n):  26.32
+2021-12-04 12:18:57 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:18:57 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 9 runs of sorting 380,951 words using coder: PinyinHelper
+2021-12-04 12:18:57 INFO  Benchmark - Begin run: MSDStringSort (380951) words from shuffledChinese.txt with 9 runs
+2021-12-04 12:19:08 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (380951) words from shuffledChinese.txt, 380951, 970.7760012222222
+2021-12-04 12:19:08 INFO  TimeLogger - Raw time per run (mSec):  970.78
+2021-12-04 12:19:08 INFO  TimeLogger - Normalized time per run (n log n):  24.84
+2021-12-04 12:19:08 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:19:08 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 3 runs of sorting 999,999 words using coder: PinyinHelper
+2021-12-04 12:19:08 INFO  Benchmark - Begin run: MSDStringSort (999999) words from shuffledChinese.txt with 3 runs
+2021-12-04 12:19:21 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (999999) words from shuffledChinese.txt, 999999, 2316.8205336666665
+2021-12-04 12:19:21 INFO  TimeLogger - Raw time per run (mSec):  2316.82
+2021-12-04 12:19:21 INFO  TimeLogger - Normalized time per run (n log n):  20.88
+2021-12-04 12:31:31 INFO  MSDStringSortBenchmark - sortStrings: beginning String sorts
+2021-12-04 12:31:31 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:31:32 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 198 runs of sorting 23,251 words using coder: PinyinHelper
+2021-12-04 12:31:32 INFO  Benchmark - Begin run: MSDStringSort (23251) words from shuffledChinese.txt with 198 runs
+2021-12-04 12:31:41 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (23251) words from shuffledChinese.txt, 23251, 44.41995989393939
+2021-12-04 12:31:41 INFO  TimeLogger - Raw time per run (mSec):  44.42
+2021-12-04 12:31:41 INFO  TimeLogger - Normalized time per run (n log n):  24.38
+2021-12-04 12:31:42 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:31:42 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 92 runs of sorting 46,502 words using coder: PinyinHelper
+2021-12-04 12:31:42 INFO  Benchmark - Begin run: MSDStringSort (46502) words from shuffledChinese.txt with 92 runs
+2021-12-04 12:31:50 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (46502) words from shuffledChinese.txt, 46502, 79.85515072826088
+2021-12-04 12:31:50 INFO  TimeLogger - Raw time per run (mSec):  79.86
+2021-12-04 12:31:50 INFO  TimeLogger - Normalized time per run (n log n):  20.35
+2021-12-04 12:31:51 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:31:51 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 42 runs of sorting 95,237 words using coder: PinyinHelper
+2021-12-04 12:31:51 INFO  Benchmark - Begin run: MSDStringSort (95237) words from shuffledChinese.txt with 42 runs
+2021-12-04 12:32:01 INFO  MSDStringSortBenchmark - CSV, Benchmark MSDStringSort (95237) words from shuffledChinese.txt, 95237, 219.34095645238094
+2021-12-04 12:32:01 INFO  TimeLogger - Raw time per run (mSec):  219.34
+2021-12-04 12:32:01 INFO  TimeLogger - Normalized time per run (n log n):  25.43
+2021-12-04 12:32:01 INFO  MSDStringSortBenchmark - getWords: testing with 999,998 unique words: from /Users/gaolan/Documents/GitHub/INFO6205FinalProject/target/classes/shuffledChinese.txt
+2021-12-04 12:32:01 INFO  MSDStringSortBenchmark - benchmarkStringSorters: testing pure sorts with 20 runs of sorting 190,475 words using coder: PinyinHelper
+2021-12-04 12:32:01 INFO  Benchmark - Begin run: MSDStringSort (190475) words from shuffledChinese.txt with 20 runs
