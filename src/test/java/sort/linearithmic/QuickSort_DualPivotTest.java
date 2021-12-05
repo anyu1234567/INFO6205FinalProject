@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import sort.GetUnsortedArray;
 import sort.PinyinHelper;
+import util.OutputIntoFile;
 
 import static org.junit.Assert.*;
 
@@ -23,5 +24,6 @@ public class QuickSort_DualPivotTest {
         QuickSort_DualPivot quickSort_dualPivot = new QuickSort_DualPivot(new PinyinHelper());
         String[] sorted = (String[]) quickSort_dualPivot.sort(GetUnsortedArray.get());
         assertTrue(PinyinHelper.isSorted(sorted));
+        OutputIntoFile.writeIntoFile(sorted,"QuickSort_DualPivotTestOutput");
     }
 }

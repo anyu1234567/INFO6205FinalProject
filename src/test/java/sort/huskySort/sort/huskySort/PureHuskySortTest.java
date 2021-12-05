@@ -7,6 +7,7 @@ import sort.GetUnsortedArray;
 import sort.PinyinHelper;
 import sort.huskySort.sort.huskySortUtils.HuskyCoderFactory;
 import sort.huskySort.sort.huskySortUtils.HuskySequenceCoder;
+import util.OutputIntoFile;
 
 import static org.junit.Assert.*;
 
@@ -27,5 +28,6 @@ public class PureHuskySortTest {
         String[]xs = GetUnsortedArray.get();
         pureHuskySort.sort(xs);
         assertTrue(PinyinHelper.isSorted(xs));
+        OutputIntoFile.writeIntoFile(xs,"HuskyTestOutput");
     }
 }
